@@ -19,6 +19,7 @@ from django.urls import path
 from .views import home_view
 
 urlpatterns = [
+    path("", home_view), #index page -> root page
     path('admin/', admin.site.urls),
     path('hello/', home_view, name='home'),
 ]
